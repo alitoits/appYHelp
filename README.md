@@ -1,6 +1,6 @@
 # Yhelp_app
 
-App with mapping
+App with yandex.maps.api 
 
 ## Quick start
 
