@@ -15,34 +15,37 @@
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/containerMap.css">
+	<link rel="stylesheet" href="css/login.css">
 	<script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
 	<script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
-	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
 <header>
-	<div class="header-container">
-		<p><a href="index.html">appYHelp</a></p>
-		<nav>
-			<ul>
-				<li><a href="loginForm.html">loginPage</a></li>
-				<li><a href="#">testPage3</a></li>
-				<li><a href="index.html">LogOut</a></li>
-			</ul>
-		</nav>
-	</div>
+	<p><a href="index.html">appYHelp</a></p>
+	<nav>
+		<ul>
+			<li><a href="loginForm.html">loginPage</a> </li>
+			<li><a href="">testPage3</a> </li>
+			<li><a href="index.html">LogOut</a> </li>
+		</ul>
+	</nav>
 </header>
 
-<div id="map"></div>
-
-<aside></aside>
+<div id="container">
+	<div class="contentMainBlock">
+		<form>
+			<label for="userName">Username</label>
+			<input id="userName" type="text"/>
+			<label for="userName">Password</label>
+			<input id="password" type="password"/>
+			<button type="submit" value="Log in">Log in</button>
+		</form>
+	</div>
+</div>
 
 <footer>
-	<div class="footer-container">
-		<p>appYHelp</p>
-	</div>
+	<p>appYHelp</p>
 </footer>
 
 <script src="js/plugins.js" type="text/javascript"></script>

@@ -1,9 +1,31 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: rgba(73, 155, 234, 1);
+	background: -moz-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(47, 141, 223, 1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73, 155, 234, 1)), color-stop(100%, rgba(47, 141, 223, 1)));
+	background: -webkit-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(47, 141, 223, 1) 100%);
+	background: -o-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(47, 141, 223, 1) 100%);
+	background: -ms-linear-gradient(left, rgba(73, 155, 234, 1) 0%, rgba(47, 141, 223, 1) 100%);
+	background: linear-gradient(to right, rgba(73, 155, 234, 1) 0%, rgba(47, 141, 223, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#499bea', endColorstr='#2f8ddf', GradientType=1);
+}
+
 html,
 button,
 input,
 select,
 textarea {
 	color: #222;
+}
+
+div, span {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 html {
@@ -198,4 +220,24 @@ textarea {
 	h3 {
 		page-break-after: avoid;
 	}
+}
+
+/* Pages */
+header, footer {
+	color: #FFF;
+	background: #808080;
+}
+
+footer {
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 7em;
+	margin-top: -7em;
+}
+
+.header-container, .footer-container {
+	width: 95%;
+	margin: 0 auto;
+	padding: 1em 0;
 }
