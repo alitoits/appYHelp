@@ -1,10 +1,22 @@
 'use strict';
 
-// Place any jQuery/helper plugins in here.
+//contextPath
+
+
+//Ajax Loader
+var bodyLoading = $("body");
+
+$(document).on({
+	ajaxStart: function () {
+		bodyLoading.addClass("loading");
+	},
+	ajaxStop: function () {
+		bodyLoading.removeClass("loading");
+	}
+});
+
 
 // Yandex Maps Api Controls
-var appYHelpMap;
-
 ymaps.ready(init);
 
 function init() {
@@ -21,6 +33,7 @@ function init() {
 		geoObjectHideIconOnBalloonOpen: false
 	});
 
+	$('.ymaps-2-1-16-map').width('auto');
 	/**
 	 * Кластеризатор расширяет коллекцию, что позволяет использовать один обработчик
 	 * для обработки событий всех геообъектов.

@@ -9,44 +9,80 @@
 <html class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>app1</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+	<meta http-equiv="Content-Type" content="application/json, charset=utf-8"/>
+	<meta http-equiv="cleartype" content="on"/>
+
+	<!-- for AD -->
+	<meta name="viewport" content="initial-scale=1, width=device-width"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+	<!-- end AD -->
+
+	<!-- analytics -->
+	<meta name="robots" content="noindex, nofollow"/>
+	<meta name="googlebot" content="nosnippet,nofollow"/>
+	<meta name="copyright" content="© 2014 anyHelp. All rights reserved."/>
+	<!-- end analytics -->
 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/ajaxLoading.css">
+	<link rel="stylesheet" href="css/offcanvasNav.css">
 	<link rel="stylesheet" href="css/containerMap.css">
-	<script src="js/vendor/modernizr-2.6.2.min.js" type="text/javascript"></script>
-	<script src="//code.jquery.com/jquery-1.11.0.min.js" type="text/javascript"></script>
-	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/customYandex.css">
+	<link rel="stylesheet" href="fonts/fontawesome.min.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="#"/>
+
+	<title>anyHelp</title>
+
+	<script src="js/vendors/modernizr-2.6.2.min.js" type="text/javascript"></script>
+	<script src="js/vendors/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
-<header>
-	<div class="header-container">
-		<p><a href="index.html">appYHelp</a></p>
-		<nav>
-			<ul>
-				<li><a href="loginForm.html">loginPage</a></li>
-				<li><a href="#">testPage3</a></li>
-				<li><a href="index.html">LogOut</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+<nav class="nav-bar" id="main-nav-bar">
+	<p><a href id="l0" class="fa fa-user fa-white"> Войти</a></p>
 
-<div id="map"></div>
+	<p><a href id="l1" class="fa fa-users fa-white"> Регистрация</a></p>
 
-<aside></aside>
+	<p><a href id="l2" class="fa fa-paperclip fa-white"> Подать объявление</a></p>
 
-<footer>
-	<div class="footer-container">
-		<p>appYHelp</p>
-	</div>
+	<p><a href id="l3" class="fa fa-cogs fa-white"> Мои настройки</a></p>
+
+	<p><a href="#" class="fa fa-arrow-circle-o-left fa-white"> Выйти</a></p>
+</nav>
+
+<div id="container">
+	<header class="main-header">
+		<i class="menu-icon fa fa-align-justify fa-white fa-2x left"></i>
+		<a href="#main-nav-bar" class="open-nav-bar left">
+			anyHelp
+		</a>
+		<a href="#" class="close-nav-bar left">
+			anyHelp
+		</a>
+
+		<a href="index.html" class="map-nav right">Карта</a>
+		<i class="map-icon fa fa-map-marker fa-white fa-2x right"></i>
+	</header>
+
+	<div id="main-content-block"></div>
+</div>
+
+<footer class="main-footer">
+	<p>© 2014 anyHelp. Все права защищены.</p>
 </footer>
 
+<script src="js/controls.js" type="text/javascript"></script>
 <script src="js/plugins.js" type="text/javascript"></script>
-<script src="js/main.js" type="text/javascript"></script>
+<script src="js/services.js" type="text/javascript"></script>
+
+<!--Ajax Loading Overlay-->
+<div class="modal"></div>
 
 </body>
 </html>

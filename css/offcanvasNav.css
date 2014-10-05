@@ -1,0 +1,85 @@
+/* Offcanvas nav-bar */
+
+.main-header {
+	background: #2F8DDF;
+	padding: 5px;
+	text-shadow: #222 0px -1px 1px;
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	left: 0;
+	transition: all 0.3s ease;
+}
+
+.main-header a {
+	margin-left: .3em;
+	color: white;
+	font-size: 32px;
+}
+
+#container {
+	float: right;
+	width: 100%;
+	height: 100%;
+	transition: width 0.3s ease;
+}
+
+.nav-bar {
+	position: fixed;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background: #3B3B3B;
+	overflow-y: auto;
+	transition: width 0.3s ease;
+}
+.nav-bar a {
+	display: block;
+	border-top: 1px solid #484848;
+	color: white;
+	padding: 15px;
+}
+.nav-bar a:hover, .nav-bar a:focus {
+}
+.nav-bar:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 34px;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+#main-content-block {
+	padding: 3em 1em 1em 1em;
+	width:100%;
+	min-height: 800px;
+	height: 950px;
+}
+
+.close-nav-bar {
+	display: none;
+}
+
+.open-nav-bar, .close-nav-bar {
+	width: 30%;
+}
+
+#main-nav-bar:target {
+	width: 20%;
+}
+
+#main-nav-bar:target + #container {
+	width: 80%;
+}
+#main-nav-bar:target + #container .open-nav-bar {
+	display: none;
+}
+#main-nav-bar:target + #container .close-nav-bar {
+	display: block;
+}
+#main-nav-bar:target + #container .main-header {
+	width: 80%;
+	left: 20%;
+}
