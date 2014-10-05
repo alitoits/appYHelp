@@ -115,3 +115,5 @@ function init() {
 	});
 
 }
+
+//Custom file uploader

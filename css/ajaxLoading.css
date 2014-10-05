@@ -6,7 +6,7 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: gray url('../img/icons/ajax-loader.gif') 50% 50% no-repeat;
+	background: lightgray url('../img/icons/ajax-loader.gif') 50% 50% no-repeat;
 }
 
 body.loading {
@@ -15,4 +15,12 @@ body.loading {
 
 body.loading .modal {
 	display: block;
+}
+
+/* loader for map block */
+.modal-map {
+	content: "";
+	height: 100%;
+	width: 100%;
+	background: lightgray url('../img/icons/ajax-loader.gif') 50% 50% no-repeat;
 }

@@ -1,0 +1,25 @@
+/* stylesheet for AD */
+
+@media all and (min-width: 1153px) {
+	.pr-logo {
+		font-size: 32em!important;
+	}
+}
+
+@media all and (max-width: 768px) {
+	.pr-logo {
+		display: none!important;
+	}
+}
+
+@media all and (max-width: 1152px) {
+	.tab_wdt_60 {
+		width: 60%;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.mob_wdt_100 {
+		width: 100%;
+	}
+}
