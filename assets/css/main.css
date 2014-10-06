@@ -382,17 +382,17 @@ textarea {
 	right: 0;
 }
 
-#register-block .form-element, #notes-block .form-element {
+#register-block .form-element, #notes-block .form-element, #login-block .form-element {
 	margin: .5em 0;
 }
 
-#register-block label, #notes-block label {
+#register-block label, #notes-block label, #login-block label {
 	font-weight: bold;
 }
 
 /* Map page */
 
-#map-block, #login-block, #register-block, #settings-block {
+#map-block, #login-block, #register-block, #settings-block, #notes-block {
 	height: 100%;
 	width: 100%;
 }
