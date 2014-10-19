@@ -1,5 +1,12 @@
 {
 	"node": true,
+	"browser": true,
 	"strict": true,
-	"jquery": true
+	"jquery": true,
+	"smarttabs": true,
+	"indent": 4,
+	"latedef": true,
+	"newcap": true,
+	"noarg": true,
+	"quotmark": "single"
 }

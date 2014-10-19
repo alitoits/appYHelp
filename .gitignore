@@ -3,5 +3,7 @@
 *.iml
 *.idea
 *.log
+tmp
 node_modules
 package.json
+/json

@@ -1,0 +1,37 @@
+<div id="notes-block">
+	<h2>Введите данные.. <i class="fa fa-bullhorn"></i></h2>
+
+	<form id="put-note-form" action="/" title="Добавить объявление" method="POST">
+		<div class="wdt_desktop wdt_tablet wdt_mobile left">
+			<div class="user-name-block">
+				<label for="username">Ваше Имя:</label>
+				<input id="username" name="username" class="form-element" placeholder="Введите Ваше Имя" autocomplete="on"/>
+			</div>
+			<div class="phone-block">
+				<label for="phone-number">Номер телефона:</label>
+				<input id="phone-number" name="phone-number" class="form-element" placeholder="Введите Ваш номер телефона"
+				       autocomplete="on" disabled/>
+			</div>
+			<div class="description-head-block">
+				<label for="descr-head">Заглавие объявления:</label>
+				<input id="descr-head" name="descr-head" class="form-element" placeholder="Введите заглавие объявления"
+				       autocomplete="on"/>
+			</div>
+			<div class="description-block">
+				<label for="descr-note">Описание объявления:</label>
+				<textarea rows="5" id="descr-note" name="descr-note" class="form-element" placeholder="Описание"></textarea>
+			</div>
+			<div class="upload-block">
+				<label for="uploader">Загрузите файл:</label>
+				<input type="file" id="uploader" name="uploader" class="form-element" placeholder="Загрузите файл" disabled/>
+			</div>
+			<div class="submit-block">
+				<button type="button" id="saveNoteButton" name="submitNoteButton" class="btn btn-submit">Сохранить</button>
+			</div>
+		</div>
+	</form>
+
+	<div id="div1"></div>
+
+	<div class="fa fa-blue fa-paperclip pr-logo"></div>
+</div>

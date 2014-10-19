@@ -13,13 +13,13 @@
 }
 
 @media all and (max-width: 1152px) {
-	.tab_wdt_60 {
+	.wdt_tablet {
 		width: 60%;
 	}
 }
 
 @media all and (max-width: 767px) {
-	.mob_wdt_100 {
+	.wdt_mobile {
 		width: 100%;
 	}
 }
