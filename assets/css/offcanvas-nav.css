@@ -37,15 +37,18 @@
 	overflow-y: auto;
 	transition: width 0.3s ease;
 }
+
 .nav-bar a {
 	display: block;
 	border-top: 1px solid #484848;
 	color: white;
 	padding: 15px;
 }
+
 .nav-bar a:hover {
 	color: lightsteelblue;
 }
+
 .nav-bar:after {
 	content: "";
 	position: absolute;
@@ -58,7 +61,7 @@
 
 #main-content-block {
 	padding: 3em 1em 1em 1em;
-	width:100%;
+	width: 100%;
 	min-height: 800px;
 	height: 950px;
 }
@@ -78,12 +81,15 @@
 #main-nav-bar:target + #container {
 	width: 80%;
 }
+
 #main-nav-bar:target + #container .open-nav-bar {
 	display: none;
 }
+
 #main-nav-bar:target + #container .close-nav-bar {
 	display: block;
 }
+
 #main-nav-bar:target + #container .main-header {
 	width: 80%;
 	left: 20%;

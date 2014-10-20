@@ -4,14 +4,14 @@
 
 
 //Ajax Loader
-var bodyLoading = $("body");
+var bodyLoading = $('body');
 
 $(document).on({
 	ajaxStart: function () {
-		bodyLoading.addClass("loading");
+		bodyLoading.addClass('loading');
 	},
 	ajaxStop: function () {
-		bodyLoading.removeClass("loading");
+		bodyLoading.removeClass('loading');
 	}
 });
 

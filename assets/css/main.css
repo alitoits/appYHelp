@@ -272,6 +272,7 @@ textarea {
 	border: 0;
 	margin: 1em 0;
 }
+
 .btn:focus {
 	border-color: gray;
 	outline: 0;

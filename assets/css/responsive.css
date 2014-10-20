@@ -2,13 +2,13 @@
 
 @media all and (min-width: 1153px) {
 	.pr-logo {
-		font-size: 32em!important;
+		font-size: 32em !important;
 	}
 }
 
 @media all and (max-width: 768px) {
 	.pr-logo {
-		display: none!important;
+		display: none !important;
 	}
 }
 

@@ -1,0 +1,4 @@
+/*From controls*/
+input:disabled {
+	background: lightgray;
+}
